@@ -90,22 +90,14 @@ function collect() {
     creditsAdded = 0;
     if (winnings > 0) {
         console.log("cashing out");
-        console.log(winnings)
+        console.log(winnings);
         winnings = 0;
         btnCollect.setAttribute("class", "disactive");
         console.log(winnings);
         txtWinnings.innerText = `Winnings: 0`;
         txtMessage.innerText = `You Have Collected Your Winnings`;
+    } else if (winnings == 0) {
+        btnCollect.setAttribute("class", "disactive");
+        txtMessage.innerText = `you have no winning to collect`;
     }
-    if (winnings == 0) {
-        btnSpin.setAttribute("class", "disactive")
-        txtMessage.innerText = `you have no winning to collect`
-    }
-}
-
-//setinteIval(1000eset
-function reset() {
-    imgWheel1.setAttribute("class", " blank");
-    imgWheel2.setAttribute("class", " blank");
-    imgWheel3.setAttribute("class", " blank");
 }
