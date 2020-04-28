@@ -1,0 +1,219 @@
+/* moblile ( 360X640) */
+
+* {
+    margin: 0 auto;
+    font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+    padding: 5px;
+}
+
+nav ul {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+nav li {
+    min-height: 45px;
+    height: auto;
+    min-width: 100px;
+    width: 100%;
+    border: solid #0d0d0d;
+    background: whitesmoke;
+}
+
+nav a {
+    min-height: 50px;
+    line-height: 50px;
+    padding: 0;
+    font-size: 1.12em;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    color: #0d0d0d;
+    border-radius: 1px;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 360px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 0 10px 10px 10px;
+}
+
+footer {
+    background: whitesmoke;
+    padding: 10px;
+    border-top: solid #0d0d0d;
+}
+
+/* Table stuff */
+
+table {
+    width: 100%;
+    border: solid #0d0d0d .2em;
+    border-radius: 5px;
+}
+
+th {
+    text-align: left;
+    background-color: whitesmoke;
+}
+
+tr {
+    background-color: #b4b4b4;
+}
+
+tr:nth-of-type(2n) {
+    background-color: #7c7a7a;
+}
+
+h2 a {
+    background: #0d0d0d;
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: #0d0d0d solid;
+}
+
+/*Java Stuff*/
+
+button {
+    border: #0d0d0d solid;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.active {
+    background: #7c7a7a;
+    color: #0d0d0d;
+}
+
+.disactive {
+    background: #B71D0B;
+    color: #333333;
+}
+
+.winner1 {
+    max-width: 25%;
+    height: auto;
+    border: 1em solid green;
+    margin: 1em 0;
+    background: whitesmoke;
+}
+
+.winner2 {
+    max-width: 25%;
+    height: auto;
+    border: 1em dashed forestgreen;
+    margin: 1em 0;
+    background: whitesmoke;
+}
+
+.looser {
+    max-width: 25%;
+    height: auto;
+    border: 1em dashed red;
+    margin: 1em 0;
+    background: whitesmoke;
+}
+
+.blank {
+    max-width: 25%;
+    height: auto;
+    border: 1em solid black;
+    margin: 1em 0;
+    background: whitesmoke;
+}
+
+#slotP {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border: solid black;
+    background: #343434;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    margin-top: 1em;
+}
+
+#button {
+    display: flex;
+    justify-content: space-around;
+}
+
+#message {
+    border: black solid;
+    width: 100%;
+    min-height: 100px;
+    margin: auto;
+    font-size: 5em;
+    font-weight: bold;
+}
+
+/* desk top */
+
+@media (min-width:800px) {
+    body {
+        background-image: url("images/Me2.webp");
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #MainNav {
+        position: sticky;
+        top: 0;
+        background: whitesmoke;
+        padding-bottom: 1px;
+    }
+    header {
+        background: whitesmoke;
+    }
+    nav li {
+        width: 24%;
+        border-radius: 5px;
+    }
+    section {
+        background: whitesmoke;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: black;
+    }
+    nav a:hover {
+        color: whitesmoke;
+        background: #0d0d0d;
+    }
+    h2 a:hover {
+        background: whitesmoke;
+        color: #0d0d0d;
+    }
+    .slotImg {
+        margin: 1em;
+        padding: 1em;
+    }
+    #slotP {
+        margin: 1em;
+    }
+    button {
+        margin: 0;
+    }
+}

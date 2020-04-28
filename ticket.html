@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="master.CSS">
+    <meta charset=utf-8>
+    <title>Joshua Picken</title>
+</head>
+
+<body>
+    <div id="MainNav">
+        <header id="Top">
+            <h1>Joshua Picken</h1>
+        </header>
+        <nav>
+            <ul class="MainNav">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="CSSSkillsPage.html">CSS Skills</a></li>
+                <li><a href="ProgrammingSkillsPage.html">Programming Skills</a></li>
+                <li><a href="QualificatonsPage.html">Qualificatons</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- ^nav^ -->
+    <section>
+        <form>
+            <h1>Booking:</h1>
+            <fieldset>
+                <!-- vv not needed in js? vv -->
+                <legend>Address</legend>
+                <p class="input">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p class="input">
+                    <label for="adress">Adress line 1:</label>
+                    <input type="text" id="adress" name="adress" required>
+                </p>
+                <p class="input">
+                    <label for="postCode">PostCode:</label>
+                    <input type="text" id="postCode" name="postCode" required>
+                </p>
+            </fieldset><!-- ^^ not needed in js ^^ -->
+            <p>
+                <label for="show">Show:</label>
+                <select id="show" name="show">
+                    <option value="null" selected>---Please Select an option---</option>
+                    <option value="phantom">Phantom of the opera: £79</option>
+                    <option value="hamilton">Hamilton: £85</option>
+                    <option value="lionKing">Lion King: £67</option>
+                    <option value="missSigon">Miss Sigon: £83</option>
+                </select>
+            </p>
+            <p>
+                <label>Number Of Tickets</label>
+                <input type="number" id="number" name="number" placeholder=0 required>
+            </p>
+            <p>
+                <label>method of pickup:</label>
+
+                <input type="radio" id="eMail" name="delivery" value="eMail" checked>
+                <label for="eMail">eMail: FREE</label>
+
+                <input type="radio" id="boxOffice" name="delivery" value="boxOffice">
+                <label for="boxOffice">Box Office: £1.50</label>
+
+                <input type="radio" id="post" name="delivery" value="post">
+                <label for="post">post: £3.99</label>
+            </p>
+            <button type="button" id="pay" name="pay" class="active">Pay</button>
+        </form>
+        <p id="detail"></p>
+        <p id="price">£0.00</p>
+    </section>
+    <script src="scripts/tickets.js"></script>
+</body>
+
+</html>
