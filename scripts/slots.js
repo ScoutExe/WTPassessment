@@ -51,20 +51,17 @@ function spin() {
             imgWheel2.setAttribute("class", " winner1");
             imgWheel3.setAttribute("class", " winner1");
             txtMessage.innerText = `WINNER!!!!!\nYou Have Won 10 Points!!!`;
-            /* setInterval(reset(), 1000); */
         } else if (stop2 == stop3) {
             winnings += 5;
             imgWheel1.setAttribute("class", " winner2");
             imgWheel2.setAttribute("class", " winner2");
             imgWheel3.setAttribute("class", " winner2");
             txtMessage.innerText = `Winner!\nYou Have Won 5 Points!`;
-            /* setInterval(reset(), 1000); */
         } else {
             imgWheel1.setAttribute("class", " looser");
             imgWheel2.setAttribute("class", " looser");
             imgWheel3.setAttribute("class", " looser");
             txtMessage.innerText = `you loose!\nUnfortunately you did not win this time.`;
-            /* setInterval(reset(), 1000); */
         }
     }
     if (credit == 0) {
