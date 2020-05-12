@@ -92,6 +92,10 @@ h2 a {
     border: #0d0d0d solid;
 }
 
+.preview {
+    padding-top: 1em;
+}
+
 /*Java Stuff*/
 
 button {
